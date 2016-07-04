@@ -98,6 +98,8 @@ class SmtpTransport extends AbstractTransport {
 		$this->_sendData();
 		$this->_disconnect();
 
+		$this->_cakeEmail = null;
+
 		return $this->_content;
 	}
 
